@@ -1,0 +1,45 @@
+{
+    "author": "Alexandre Blondeau",
+    "description": "🚀 A JavaScript 3D Game Engine.",
+    "devDependencies": {
+
+        "webpack": "5.60.0",
+        "webpack-cli": "4.9.1",
+        "webpack-dev-server": "4.3.1"
+    },
+    "engines": {
+
+        "node": "16.0.0",
+        "npm": "7.10.0"
+    },
+    "homepage": "https://github.com/hypercubejs/hypercubejs",
+    "keywords": [
+
+        "3d",
+        "canvas",
+        "engine",
+        "game",
+        "game-engine",
+        "html5",
+        "hypercubejs",
+        "javascript",
+        "prototyping",
+        "webgl",
+        "webgl2"
+    ],
+    "license": "MIT",
+    "name": "@hypercubejs/hypercubejs",
+    "private": "true",
+    "repository": {
+
+        "type": "git",
+        "url": "git+https://github.com/hypercubejs/hypercubejs.git"
+    },
+    "scripts": {
+
+        "distribution": "npm run distribution:machine",
+        "distribution:machine": "webpack --config ./machine/webpack.production.js",
+        "start": "npm run start:machine",
+        "start:machine": "webpack-dev-server --config ./machine/webpack.development.js --port 3333"
+    }
+}

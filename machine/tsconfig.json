@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+
+        "baseUrl": "./",
+        "checkJs": true,
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "outDir": "distribution",
+        "paths": {
+
+            "@hypercubejs/hypercubejs": ["../engine/index.js"],
+
+            "@/*": ["sources/*"]
+        },
+        "target": "esnext"
+    }
+}
