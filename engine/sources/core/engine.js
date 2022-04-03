@@ -1,9 +1,24 @@
+import {Loop} from '../../../helpers/loop.js';
+
 /**
  * Creates Hypercube.js Game Engines.
  * @example
  * const engine = new Engine();
  */
 class Engine {
+
+    $rafid;
+
+    $devicecontroller;
+
+    $machine;
+
+    /**
+     * Stores the game device.
+     * @type {import('../../index.js').DeviceGame}
+     * @private
+     */
+    $devicegame;
 
     /**
      * Stores the viewer device.
@@ -19,6 +34,24 @@ class Engine {
      */
     $systems;
 
+    $started;
+
+    get devicecontroller() {
+
+        return this.$devicecontroller;
+    }
+
+    /**
+     * Gets the game device.
+     * @type {import('../../index.js').DeviceGame}
+     * @public
+     * @readonly
+     */
+    get devicegame() {
+
+        return this.$devicegame;
+    }
+
     /**
      * Gets the viewer device.
      * @type {import('../../index.js').DeviceViewer}
@@ -28,6 +61,21 @@ class Engine {
     get deviceviewer() {
 
         return this.$deviceviewer;
+    }
+
+    set devicecontroller($devicecontroller) {
+
+        this.$devicecontroller = $devicecontroller;
+    }
+
+    /**
+     * Sets the viewer device.
+     * @type {import('../../index.js').DeviceGame}
+     * @public
+     */
+    set devicegame($devicegame) {
+
+        this.$devicegame = $devicegame;
     }
 
     /**
@@ -46,6 +94,8 @@ class Engine {
     constructor() {
 
         this.$systems = [];
+
+        this.$loop = new Loop(this.tick.bind(this));
     }
 
     /**
@@ -60,15 +110,44 @@ class Engine {
         this.$systems.push($system);
     }
 
+    // @TODO
+    start() {
+
+        this.$started = true;
+
+        this.$systems.forEach(($system) => {
+
+            $system.start();
+        });
+
+        this.$loop.update();
+    }
+
+    // @TODO
+    stop() {
+
+        this.$started = false;
+
+        window.cancelAnimationFrame(this.$rafid);
+
+        this.$rafid = undefined;
+
+        this.$systems = [];
+    }
+
     /**
      * Updates each system once.
      * @public
      */
-    tick() {
+    tick(timeframe) {
+
+        // console.log('tick')
 
         this.$systems.forEach(($system) => {
 
-            $system.update();
+            if (this.$started === false) return;
+
+            $system.update(timeframe);
         });
     }
 }

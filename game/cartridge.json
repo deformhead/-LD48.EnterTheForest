@@ -1,0 +1,355 @@
+{
+    "nodes": [
+        {
+            "identifier": 0,
+            "name": "Root",
+            "type": "NODE",
+            "nodes": [
+                10,
+                20,
+                1648945804178,
+                1648946091544,
+                1648946561587,
+                1648946626322,
+                1649009954483,
+                1649009989744,
+                1649010169039,
+                1649010426148,
+                1649010445449
+            ],
+            "parameters": {
+                "translation": [
+                    0,
+                    0,
+                    0
+                ],
+                "rotation": [
+                    0,
+                    0,
+                    0
+                ],
+                "scale": [
+                    1,
+                    1,
+                    1
+                ]
+            }
+        },
+        {
+            "identifier": 1,
+            "name": "Hero Camera",
+            "type": "CAMERA_NODE",
+            "nodes": [],
+            "parameters": {
+                "translation": [
+                    0,
+                    1,
+                    -1
+                ],
+                "rotation": [
+                    0,
+                    0,
+                    0
+                ],
+                "projection": {
+                    "fieldofview": 50,
+                    "near": 0.1,
+                    "far": 1000,
+                    "type": "perspective"
+                }
+            }
+        },
+        {
+            "identifier": 10,
+            "name": "Node Hero Container",
+            "type": "NODE",
+            "nodes": [
+                1,
+                16
+            ],
+            "parameters": {
+                "translation": [
+                    0,
+                    0,
+                    0
+                ],
+                "rotation": [
+                    0,
+                    0,
+                    0
+                ],
+                "scale": [
+                    1,
+                    1,
+                    1
+                ]
+            }
+        },
+        {
+            "identifier": 16,
+            "name": "Cube Hero",
+            "type": "MODEL_NODE",
+            "nodes": [],
+            "parameters": {
+                "translation": [
+                    0,
+                    1,
+                    0
+                ],
+                "rotation": [
+                    0,
+                    0,
+                    0
+                ],
+                "scale": [
+                    1,
+                    1,
+                    1
+                ],
+                "type": "hero"
+            }
+        },
+        {
+            "identifier": 20,
+            "name": "Floor",
+            "type": "MODEL_NODE",
+            "nodes": [],
+            "parameters": {
+                "translation": [
+                    0,
+                    -1,
+                    -900
+                ],
+                "rotation": [
+                    0,
+                    0,
+                    0
+                ],
+                "scale": [
+                    3,
+                    1,
+                    1000
+                ],
+                "type": "floor"
+            }
+        },
+        {
+            "identifier": 1648945804178,
+            "name": "Cube",
+            "type": "MODEL_NODE",
+            "nodes": [],
+            "parameters": {
+                "translation": [
+                    -2,
+                    0,
+                    -24
+                ],
+                "rotation": [
+                    0,
+                    0,
+                    0
+                ],
+                "scale": [
+                    1,
+                    100,
+                    1
+                ],
+                "type": "box"
+            }
+        },
+        {
+            "identifier": 1648946091544,
+            "name": "Cube",
+            "type": "MODEL_NODE",
+            "nodes": [],
+            "parameters": {
+                "translation": [
+                    0,
+                    0,
+                    -48
+                ],
+                "rotation": [
+                    0,
+                    0,
+                    0
+                ],
+                "scale": [
+                    1,
+                    100,
+                    1
+                ],
+                "type": "box"
+            }
+        },
+        {
+            "identifier": 1648946561587,
+            "name": "Cube",
+            "type": "MODEL_NODE",
+            "nodes": [],
+            "parameters": {
+                "translation": [
+                    -2,
+                    0,
+                    -72
+                ],
+                "rotation": [
+                    0,
+                    0,
+                    0
+                ],
+                "scale": [
+                    1,
+                    100,
+                    1
+                ],
+                "type": "box"
+            }
+        },
+        {
+            "identifier": 1648946626322,
+            "name": "Cube",
+            "type": "MODEL_NODE",
+            "nodes": [],
+            "parameters": {
+                "translation": [
+                    2,
+                    0,
+                    -72
+                ],
+                "rotation": [
+                    0,
+                    0,
+                    0
+                ],
+                "scale": [
+                    1,
+                    100,
+                    1
+                ],
+                "type": "box"
+            }
+        },
+        {
+            "identifier": 1649009954483,
+            "name": "Cube",
+            "type": "MODEL_NODE",
+            "nodes": [],
+            "parameters": {
+                "translation": [
+                    2,
+                    0,
+                    -96
+                ],
+                "rotation": [
+                    0,
+                    0,
+                    0
+                ],
+                "scale": [
+                    1,
+                    100,
+                    1
+                ],
+                "type": "box"
+            }
+        },
+        {
+            "identifier": 1649009989744,
+            "name": "Cube",
+            "type": "MODEL_NODE",
+            "nodes": [],
+            "parameters": {
+                "translation": [
+                    0,
+                    0,
+                    -96
+                ],
+                "rotation": [
+                    0,
+                    0,
+                    0
+                ],
+                "scale": [
+                    1,
+                    100,
+                    1
+                ],
+                "type": "box"
+            }
+        },
+        {
+            "identifier": 1649010169039,
+            "name": "Cube",
+            "type": "MODEL_NODE",
+            "nodes": [],
+            "parameters": {
+                "translation": [
+                    0,
+                    0,
+                    -24
+                ],
+                "rotation": [
+                    0,
+                    0,
+                    0
+                ],
+                "scale": [
+                    1,
+                    100,
+                    1
+                ],
+                "type": "box"
+            }
+        },
+        {
+            "identifier": 1649010426148,
+            "name": "Cube",
+            "type": "MODEL_NODE",
+            "nodes": [],
+            "parameters": {
+                "translation": [
+                    -2,
+                    0,
+                    -120
+                ],
+                "rotation": [
+                    0,
+                    0,
+                    0
+                ],
+                "scale": [
+                    1,
+                    100,
+                    1
+                ],
+                "type": "box"
+            }
+        },
+        {
+            "identifier": 1649010445449,
+            "name": "Cube",
+            "type": "MODEL_NODE",
+            "nodes": [],
+            "parameters": {
+                "translation": [
+                    0,
+                    0,
+                    -120
+                ],
+                "rotation": [
+                    0,
+                    0,
+                    0
+                ],
+                "scale": [
+                    1,
+                    100,
+                    1
+                ],
+                "type": "box"
+            }
+        }
+    ],
+    "camera": 1,
+    "node": 0
+}

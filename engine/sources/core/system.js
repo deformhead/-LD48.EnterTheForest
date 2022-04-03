@@ -37,6 +37,12 @@ class System {
     }
 
     /**
+     * Starts the system.
+     * @public
+     */
+    start() {}
+
+    /**
      * Updates the system.
      * @public
      */

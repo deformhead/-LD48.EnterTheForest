@@ -20,6 +20,21 @@ function configuration() {
         'devtool': 'inline-source-map',
         'entry': path.resolve(__dirname, 'index.js'),
         'mode': 'development',
+        'module': {
+
+            'rules': [
+
+                {
+                    'test': /\.mp3$/,
+                    'use': [
+
+                        {
+                            'loader': 'file-loader'
+                        }
+                    ]
+                }
+            ]
+        },
         'output': {
 
             'path': path.resolve(__dirname, 'distribution'),

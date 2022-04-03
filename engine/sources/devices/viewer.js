@@ -49,6 +49,25 @@ class Viewer {
     }
 
     /**
+     * Gets the aspect ratio of the viewer.
+     * @returns {number}
+     */
+    aspect() {
+
+        return this.$element.clientWidth / this.$element.clientHeight;
+    }
+
+    /**
+     * Destroys the rendering context and the canvas element.
+     * @public
+     */
+    destroy() {
+
+        // remove canvas element from its parent
+        this.$container.removeChild(this.$element);
+    }
+
+    /**
      * Gets the device pixel ratio.
      * @returns {number}
      * @public
